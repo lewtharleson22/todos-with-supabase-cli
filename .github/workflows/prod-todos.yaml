@@ -14,5 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: supabase/setup-cli@v1
+        with:
+          version: 1.115.5
       - run: supabase link --project-ref oubymudswumrimeqzfra
       - run: supabase db push
