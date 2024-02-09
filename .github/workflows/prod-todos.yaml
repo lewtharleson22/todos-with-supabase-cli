@@ -16,5 +16,5 @@ jobs:
       - uses: supabase/setup-cli@v1
         with:
           version: latest
-      - run: supabase link --project-ref $SUAPBASE_PROJECT_ID
+      - run: supabase link
       - run: supabase db push
