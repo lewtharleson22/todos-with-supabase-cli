@@ -16,6 +16,5 @@ jobs:
       - uses: supabase/setup-cli@v1
         with:
           version: 1.115.5
-      - run: echo "The project id $SUPABASE_PROJECT_ID"
-      - run: supabase link --project-ref $SUPABASE_PROJECT_ID
+      - run: supabase link
       - run: supabase db push
